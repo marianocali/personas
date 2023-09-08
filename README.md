@@ -1,5 +1,6 @@
 ## Para ejecutar el proyecto localmente
 ejecutar desde una consola 
+
     mvn spring-boot:run
 
 También es posible abrirlo desde el IDE y ejecutar la clase ChallengeApplication
