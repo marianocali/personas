@@ -79,5 +79,6 @@ public class PersonaServiceImpl implements PersonaService{
             throw new PersonaNotFoundException("La persona con id " + idPersona + " no ha sido encontrada.");
         }
         personaRepository.delete(optPersona.get());
+        relacionesRepository.deleteRelacion(idPersona);
     }
 }

@@ -19,8 +19,8 @@ public class RelacionServiceImpl implements RelacionService{
     public String getRelacion(Integer idPersona1, Integer idPersona2) {
         Optional<Relacion> relacion = Optional.ofNullable(relacionesRepository.findPersonasById(idPersona1,idPersona2));
         if(relacion.isPresent()){
-            return "hay relacion entre " + idPersona1 + " e " + idPersona2;
+            return "hay relacion entre " + idPersona1 + " y " + idPersona2;
         }
-        return "no hay relacion entre "+ idPersona1 + " e " + idPersona2;
+        return "no hay relacion entre "+ idPersona1 + " y " + idPersona2;
     }
 }
