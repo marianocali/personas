@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS persona;
+CREATE TABLE persona (
+id INT AUTO_INCREMENT  PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+tipo_Documento VARCHAR(10) NOT NULL,
+nro_Documento VARCHAR(10) NOT NULL,
+pais VARCHAR(30) NOT NULL,
+fecha_Nacimiento DATE NOT NULL,
+telefono VARCHAR(30)
+);
+
+DROP TABLE IF EXISTS relacion;
+CREATE TABLE relacion (
+id INT AUTO_INCREMENT  PRIMARY KEY,
+id_persona1 INT NOT NULL,
+id_persona2 INT NOT NULL
+);
